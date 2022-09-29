@@ -1,4 +1,4 @@
-package nl.kevinwilmsen.usefullthings.blocks;
+package nl.kevinwilmsen.usefulthings.blocks;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -12,16 +12,16 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import nl.kevinwilmsen.usefullthings.UsefullThings;
-import nl.kevinwilmsen.usefullthings.items.ModCreativeModeTab;
-import nl.kevinwilmsen.usefullthings.items.ModItems;
+import nl.kevinwilmsen.usefulthings.UsefulThings;
+import nl.kevinwilmsen.usefulthings.items.ModCreativeModeTab;
+import nl.kevinwilmsen.usefulthings.items.ModItems;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, UsefullThings.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, UsefulThings.MOD_ID);
 
     public static final RegistryObject<Block> TANZANITE_BLOCK = registerBlock("tanzanite_block",
             ()-> new Block(BlockBehaviour.Properties.of(Material.STONE)

@@ -1,4 +1,4 @@
-package nl.kevinwilmsen.usefullthings;
+package nl.kevinwilmsen.usefulthings;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -8,19 +8,19 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import nl.kevinwilmsen.usefullthings.blocks.ModBlocks;
-import nl.kevinwilmsen.usefullthings.items.ModItems;
+import nl.kevinwilmsen.usefulthings.blocks.ModBlocks;
+import nl.kevinwilmsen.usefulthings.items.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(UsefullThings.MOD_ID)
-public class UsefullThings {
+@Mod(UsefulThings.MOD_ID)
+public class UsefulThings {
 
-    public static final String MOD_ID = "usefullthings";
+    public static final String MOD_ID = "usefulthings";
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public UsefullThings() {
+    public UsefulThings() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
